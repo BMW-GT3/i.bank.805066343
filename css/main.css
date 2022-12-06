@@ -1,0 +1,155 @@
+body{
+    
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+div{
+    width: 70%;
+    margin: auto;
+    box-shadow: 0 0 10px blue;
+    padding: 50px;
+    background-color:  black;
+}
+
+img{
+    max-width: 290px;
+    height: auto;
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+p{
+    font-size: 22px;
+    font-family: Helvetica;
+    line-height: 1.65;
+    color: white;
+    
+}
+.photo{
+    width: 200px;
+    height: 100px;
+    background-color: blanchedalmond;
+    border: 5px solid gold;
+    border-radius: 30px;
+    margin: 10px;
+    box-shadow: 0 0 10px gold;
+    width: calc(50% - 40px);
+    height: calc((35vw - 40px) / 16 * 9);
+    background-position: center;
+    background-size: cover;}
+.photolox{
+    background-image: url(../img/1.jpg);
+
+}
+.photo1{
+background-image: url(../img/c.jpg);
+}
+h1{
+    font-size: 48px;
+    font-family: Helvetica;
+    text-align: center;
+    padding-bottom: 50px;
+    width: 100%;
+    color: gold;
+    text-shadow: #FC0 1px 0 10px;
+}
+h2{
+    color: snow;
+}
+.p11{
+    color: black;
+}
+#p1{
+    color: black;
+}
+/*.tizery-hr {
+    border: 1px solid #c4c4c4; /* Рамка всего блока. Стоит ширина 1px, solid - непрерывная, #c4c4c4 - это ее цвет. Если рамка не нужна - просто удалите эту строку */
+    margin: 10px 0 10px 0; /* Внешний отступ всего блока с тизерами от контента страницы. Стоит сверху и снизу по 10px, а слева и справа 0px */
+    padding: 10px 5px 5px 5px; /* Внутренний отступ внутри блока. Чтобы не сливались с краями рамки тизеры. Соответственно: сверху 10 px, справа 5px, снизу 5px, слева 5px */
+    text-align: center; /* Выравнивание текста во всем блоке по центру */
+ 
+}
+/*.tizery-hr img {
+    width: 150px; /* Установили принудительно ширину картинки в 150px, на случай если у вас будут все разного размера */
+    height: 150px; /* Установили высоту картинки в 150px, аналогично как с шириной случай */
+    display: block; /* Позволяет перенести текст под картинку в нашем случае. Оставляем так */
+    margin: 0 auto 10px; /* Внешний отступ картинки. Сверху 0px, слева и справа auto, чтобы она была ровно по центру своего блока тизера. Снизу 10px, чтобы не сливалось с текстом */
+}
+/*.tizery-hr a {
+    color: #000 !important; /* Цвет ссылки, если требуется сменить стандартный цвет ссылок шаблона. Попробуйте удалить ее и посмотреть как у вас настроено по-умолчанию в шаблоне */
+    display: inline-block; /* Этим параметром мы говорим, чтобы блоки становились в одну строку и при низком разрешении красиво выстраивались друг под другом */
+    font-weight: bold; /* Делаем текст жирным. Если не нужно - просто удалите строку */
+    font-size: 16px !important; /* Размер шрифта у текста. Поэкспериментируйте с размером */
+    margin: 5px 0 5px 0; /* Задаем внешний отступ каждому блоку с тизером, чтобы при низком разрешении они не налазили друг на друга снизу и сверху. Соответственно по 5px сверху и снизу */
+    padding: 5px; /* Задаем внутренний отступ для каждого блока с тизером, чтобы тот же текст не прилипал к краям блока, если вы добавите ему рамку */
+    width: 200px; /* Задаем ширину блока каждого. Здесь можно сделать и 150px по ширине картинки, чтобы текст ровно под ней был. На ваше усмотрение */
+    vertical-align: top; /* Данный параметр выравнивает все тизеры по верхнему краю. Пригодится в случае, если у вас какой-то текст будет больше на 1-2 строки, чем остальные */
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: radial-gradient(#BFD6E2 1px, rgba(255,255,255,0) 2px);
+  background-size: 10px 10px;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav a {
+  display: block;
+  text-decoration: none;
+  outline: none;
+  transition: .4s ease-in-out;
+}
+.topmenu {
+  backface-visibility: hidden;
+  background: rgba(255,255,255,.8);
+}
+.topmenu > li {
+  display: inline-block;
+  position: relative;
+}
+.topmenu > li > a {
+  font-family: 'Exo 2', sans-serif;
+  height: 70px;
+  line-height: 70px;
+  padding: 0 30px;
+  font-weight: bold;
+  color: #003559;
+  text-transform: uppercase;
+}
+.down:after {
+  content: "\f107";
+  margin-left: 8px;
+  font-family: FontAwesome;
+}
+.topmenu li a:hover { color: #E6855F; }
+.submenu {
+  background: white;
+  border: 2px solid #003559;
+  position: absolute;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 5;
+  width: 150px;
+  transform: perspective(600px) rotateX(-90deg);
+  transform-origin: 0% 0%;
+  transition: .6s ease-in-out;
+}
+.topmenu > li:hover .submenu{
+  visibility: visible;
+  opacity: 1;
+  transform: perspective(600px) rotateX(0deg);
+}
+.submenu li a {
+  color: #7f7f7f;
+  font-size: 13px;
+  line-height: 36px;
+  padding: 0 25px;
+  font-family: 'Kurale', serif;
+}
